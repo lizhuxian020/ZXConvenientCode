@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZXConvenientCode"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "convenient code for programming"
 
   # This description is used to generate tags and improve search results.
@@ -89,8 +89,20 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = 'ZXConvenientCode/*'
-  # s.exclude_files = "Classes/Exclude"
+  # s.source_files = 'ZXConvenientCode/*'
+  # s.source_files = '*.{h.m}'
+
+  s.subspec 'Interface' do |inter|
+        inter.source_files = 'Interface/**/*.{h,m}'
+        inter.dependency 'ZXConvenientCode/Module'
+end
+
+  s.subspec 'Module' do |mo|
+    mo.source_files = 'Module/Source/**/*.{h,m}'
+    # mo.dependency 'ZXConvenientCode/Interface'
+end
+
+# s.public_header_files = "Classes/**/*.h"
 
   # s.public_header_files = "Classes/**/*.h"
 
