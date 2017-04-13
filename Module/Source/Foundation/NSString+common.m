@@ -10,8 +10,13 @@
 
 @implementation NSString (common)
 
-- (BOOL)isEmpty {
-    return self.length == 0 && !self;
++ (isEmptyString)isEmpty {
+    return  ^(NSString *string) {
+        if (string == nil || !string || string.length == 0) {
+            return (BOOL)true;
+        }
+        return (BOOL)false;
+    };
 }
 
 @end

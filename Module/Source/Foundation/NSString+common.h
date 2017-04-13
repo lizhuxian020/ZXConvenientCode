@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef bool (^isEmptyString)(NSString *string);
+
 @interface NSString (common)
 
-- (BOOL)isEmpty;
++ (isEmptyString)isEmpty;
 
 @end
