@@ -17,4 +17,6 @@
 @property(nonatomic, assign)CGFloat zx_width;   //宽度
 @property(nonatomic, assign)CGFloat zx_height;  //高度
 
+- (void)showBorder;
+
 @end
