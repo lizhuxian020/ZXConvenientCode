@@ -12,6 +12,7 @@
 #import "UIView+ZXSugar.h"
 #import "NSString+common.h"
 #import "NSObject+common.h"
+#import "UIColor+common.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
