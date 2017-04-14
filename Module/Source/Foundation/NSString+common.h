@@ -10,4 +10,8 @@
 
 @interface NSString (common)
 
+- (BOOL)zx_isPureNum;
+
+- (BOOL)zx_isPureHexNum;
+
 @end

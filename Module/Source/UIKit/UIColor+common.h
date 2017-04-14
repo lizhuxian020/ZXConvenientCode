@@ -10,6 +10,8 @@
 
 @interface UIColor (common)
 
-+ (instancetype)zx_colorWithRGB:(NSString *)color;
++ (instancetype)zx_colorWithHex:(int)hex;
+
++ (instancetype)zx_colorWithHexString:(NSString *)hexString;
 
 @end
