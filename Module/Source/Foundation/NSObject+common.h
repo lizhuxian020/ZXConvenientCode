@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef bool (^isEmptyHandle)(NSObject *objc);
+#define OBJC_ISEMPTY(obj) NSObject.isEmpty(obj)
+
+typedef BOOL (^isEmptyHandle)(NSObject *objc);
 
 @interface NSObject (common)
 

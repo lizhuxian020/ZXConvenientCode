@@ -10,13 +10,5 @@
 
 @implementation NSString (common)
 
-+ (isEmptyString)isEmpty {
-    return  ^(NSString *string) {
-        if (string == nil || !string || string.length == 0) {
-            return (BOOL)true;
-        }
-        return (BOOL)false;
-    };
-}
 
 @end
