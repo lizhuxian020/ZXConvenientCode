@@ -14,7 +14,8 @@
 #import "NSObject+common.h"
 #import "UIColor+common.h"
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kScreenB [UIScreen mainScreen].bounds
 
 #endif /* ZXSugarCode_h */
