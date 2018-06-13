@@ -10,4 +10,6 @@
 
 @interface NSObject (DicToModel)
 
++ (instancetype)modelWithDic:(NSDictionary *)dic;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZXSugarCode.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    Person *p1 = [Person modelWithDic:@{@"name": @"jim"}];
+    NSLog(@"%@", p1);w
 }
 
 
