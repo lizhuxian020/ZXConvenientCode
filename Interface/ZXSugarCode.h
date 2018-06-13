@@ -13,6 +13,7 @@
 #import "NSString+common.h"
 #import "NSObject+common.h"
 #import "UIColor+common.h"
+#import "NSObject+DicToModel.h"
 
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height

@@ -18,6 +18,7 @@
 		3DA674E420D0F6800004944D /* UIView+ZXSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674DC20D0F67F0004944D /* UIView+ZXSugar.m */; };
 		3DA674E520D0F6800004944D /* NSObject+common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674E020D0F67F0004944D /* NSObject+common.m */; };
 		3DA674E620D0F6800004944D /* NSString+common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674E120D0F67F0004944D /* NSString+common.m */; };
+		3DA674EA20D0F8190004944D /* NSObject+DicToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674E920D0F8190004944D /* NSObject+DicToModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		3DA674E020D0F67F0004944D /* NSObject+common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+common.m"; sourceTree = "<group>"; };
 		3DA674E120D0F67F0004944D /* NSString+common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+common.m"; sourceTree = "<group>"; };
 		3DA674E220D0F67F0004944D /* NSObject+common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+common.h"; sourceTree = "<group>"; };
+		3DA674E820D0F8190004944D /* NSObject+DicToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DicToModel.h"; sourceTree = "<group>"; };
+		3DA674E920D0F8190004944D /* NSObject+DicToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DicToModel.m"; sourceTree = "<group>"; };
 		CC71DA74DEA8AA441C98F666 /* Pods-ZXConvenientCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXConvenientCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXConvenientCode/Pods-ZXConvenientCode.debug.xcconfig"; sourceTree = "<group>"; };
 		D31E89C177D0A2326BD5CB41 /* Pods-ZXConvenientCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXConvenientCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXConvenientCode/Pods-ZXConvenientCode.release.xcconfig"; sourceTree = "<group>"; };
 		D740BE5758AF7840E066EA5A /* libPods-ZXConvenientCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXConvenientCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,7 @@
 		3DA674D820D0F67F0004944D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3DA674E720D0F7F70004944D /* RunTime */,
 				3DA674D920D0F67F0004944D /* UIKit */,
 				3DA674DE20D0F67F0004944D /* Foundation */,
 			);
@@ -140,6 +144,15 @@
 				3DA674E220D0F67F0004944D /* NSObject+common.h */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		3DA674E720D0F7F70004944D /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				3DA674E820D0F8190004944D /* NSObject+DicToModel.h */,
+				3DA674E920D0F8190004944D /* NSObject+DicToModel.m */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 		BC59FDFE585F02B2AD980F62 /* Frameworks */ = {
@@ -291,6 +304,7 @@
 				3DA674C420D0F6290004944D /* ViewController.m in Sources */,
 				3DA674CF20D0F6290004944D /* main.m in Sources */,
 				3DA674C120D0F6290004944D /* AppDelegate.m in Sources */,
+				3DA674EA20D0F8190004944D /* NSObject+DicToModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
