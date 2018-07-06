@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		17D41F6947CDE07DB3E6B93A /* libPods-ZXConvenientCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D740BE5758AF7840E066EA5A /* libPods-ZXConvenientCode.a */; };
+		3D1E5FB620EF4D3200B3E50B /* ZXCCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E5FB520EF4D3200B3E50B /* ZXCCUtils.m */; };
+		3D1E5FBA20EF541C00B3E50B /* ZXCCUtils+DispatchAfter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E5FB920EF541C00B3E50B /* ZXCCUtils+DispatchAfter.m */; };
 		3DA674C120D0F6290004944D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674C020D0F6290004944D /* AppDelegate.m */; };
 		3DA674C420D0F6290004944D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA674C320D0F6290004944D /* ViewController.m */; };
 		3DA674C720D0F6290004944D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA674C520D0F6290004944D /* Main.storyboard */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1E5FB420EF4D3200B3E50B /* ZXCCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXCCUtils.h; sourceTree = "<group>"; };
+		3D1E5FB520EF4D3200B3E50B /* ZXCCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXCCUtils.m; sourceTree = "<group>"; };
+		3D1E5FB820EF541C00B3E50B /* ZXCCUtils+DispatchAfter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXCCUtils+DispatchAfter.h"; sourceTree = "<group>"; };
+		3D1E5FB920EF541C00B3E50B /* ZXCCUtils+DispatchAfter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZXCCUtils+DispatchAfter.m"; sourceTree = "<group>"; };
 		3DA674BC20D0F6290004944D /* ZXConvenientCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXConvenientCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA674BF20D0F6290004944D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA674C020D0F6290004944D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1E5FB720EF53BD00B3E50B /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				3D1E5FB820EF541C00B3E50B /* ZXCCUtils+DispatchAfter.h */,
+				3D1E5FB920EF541C00B3E50B /* ZXCCUtils+DispatchAfter.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		3DA674B320D0F6290004944D = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +136,7 @@
 		3DA674D820D0F67F0004944D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D1E5FB720EF53BD00B3E50B /* GCD */,
 				3DA674E720D0F7F70004944D /* RunTime */,
 				3DA674D920D0F67F0004944D /* UIKit */,
 				3DA674DE20D0F67F0004944D /* Foundation */,
@@ -146,6 +162,8 @@
 				3DA674E020D0F67F0004944D /* NSObject+common.m */,
 				3DA674E120D0F67F0004944D /* NSString+common.m */,
 				3DA674E220D0F67F0004944D /* NSObject+common.h */,
+				3D1E5FB420EF4D3200B3E50B /* ZXCCUtils.h */,
+				3D1E5FB520EF4D3200B3E50B /* ZXCCUtils.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -324,9 +342,11 @@
 				3DA674E620D0F6800004944D /* NSString+common.m in Sources */,
 				3DA674C420D0F6290004944D /* ViewController.m in Sources */,
 				3DA674CF20D0F6290004944D /* main.m in Sources */,
+				3D1E5FBA20EF541C00B3E50B /* ZXCCUtils+DispatchAfter.m in Sources */,
 				3DA674F120D0FBAD0004944D /* Person.m in Sources */,
 				3DA674C120D0F6290004944D /* AppDelegate.m in Sources */,
 				3DA674EA20D0F8190004944D /* NSObject+DicToModel.m in Sources */,
+				3D1E5FB620EF4D3200B3E50B /* ZXCCUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
