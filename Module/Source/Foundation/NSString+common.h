@@ -14,4 +14,6 @@
 
 - (BOOL)zx_isPureHexNum;
 
+- (NSString *)zx_stringByRemoveAllSpaceAndEnter;
+
 @end
